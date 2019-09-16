@@ -5,8 +5,159 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <p></p>
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <header class="main-header">
+      <img src="" class="main-header-logo" alt="Девайс">
+      <div class="main-header-user-interface">
+        <form class="main-header-search" action="https://echo.htmlacademy.ru" method="get">
+          <input type="text" name="search" value="" placeholder="поиск по сайту" id="search-text">
+          <label for="search-text">строка поиска</label>
+        </form>
+        <a href="#" class="main-header-sign-in">Войти</a>
+        <a href="#" class="main-header-compare">Вравнить</a>
+        <a href="#" class="main-header-basket">Корзина</a>
+      </div>
+      <nav class="main-header-nav">
+        <ul>
+          <li>
+            <a href="#" class="main-header-nav-goods">Каталог товаров</a>
+            <ul class="main-header-nav-goods-video">
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+            </ul>
+            <ul class="main-header-nav-goods-watch">
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+            </ul>
+            <ul class="main-header-nav-goods-fly-device">
+              <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Интернет-магазин интересных девайсов</h1>
+      <section class="promotion-slider">
+        <h2 class="visually-hidden">Популярные товары</h2>
+        <div class="promotion-slider-stick">
+          <h3 class="visually-hidden">Палка для селфи</h3>
+          <img class="promotion-slider-image" src="" alt="Селфи палка">
+          <p class="promotion-slider-tagline">Делай селфи, как Бен Стиллер!</p>
+          <p class="promotion-slider-description">
+            Самая длинная палка для селфи доступна в нашем магазине.
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+          </p>
+          <a href="#" class="button promotion-slider-button">Подробнее</a>
+          <table>
+            <tr>
+              <th>Длина палки</th>
+              <th>Вес палки</th>
+              <th>Материал</th>
+            </tr>
+            <tr>
+              <td>8,5 метров</td>
+              <td>5 кг</td>
+              <td>Карбон</td>
+            </tr>
+          </table>
+        </div>
+        <div class="promotion-slider-watch">
+          <h3 class="visually-hidden">фитнес-браслет</h3>
+          <img class="promotion-slider-image" src="" alt="фитнес браслет">
+          <p class="promotion-slider-tagline">Худеем правильно!</p>
+          <p class="promotion-slider-description">
+            Мотивирующие фитнес-браслеты помогут найти в себе силы
+            не пропускать занятия и соблюдать диету.
+          </p>
+          <a href="#" class="button promotion-slider-button">Подробнее</a>
+          <table>
+            <tr>
+              <th>Без подзарядки</th>
+            </tr>
+            <tr>
+              <td>48 часов</td>
+            </tr>
+          </table>
+        </div>
+        <div class="promotion-slider-stick">
+          <h3 class="visually-hidden">Квадрокоптер</h3>
+          <img class="promotion-slider-image" src="" alt="">
+          <p class="promotion-slider-tagline">Порхает как бабочка, жалит как пчела!</p>
+          <p class="promotion-slider-description">
+            Этот обычный, на первый взгляд, квадрокоптер оснащен
+            мощным лазером, замаскированным под стандартную камеру.
+          </p>
+          <a href="#" class="button promotion-slider-button">Подробнее</a>
+          <table>
+            <tr>
+              <th>Дальность полета</th>
+              <th>Радиус поражения</th>
+            </tr>
+            <tr>
+              <td>800 м</td>
+              <td>50 м</td>
+            </tr>
+          </table>
+        </div>
+        <div class="promotion-slider-radio">
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+        </div>
+      </section>
+      <section class="main-production">
+        <h2 class="visually-hidden">Наша продукция</h2>
+        <ul>
+          <li>
+            <a href="#">
+              Виртуальная реальность
+              <div class="main-production-card"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Моноподы для селфи
+              <div class="main-production-card"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Экшн-камеры
+              <div class="main-production-card"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Фитнес-браслеты
+              <div class="main-production-card"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Умные часы
+              <div class="main-production-card"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Умные часы
+              <div class="main-production-card"></div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="visually-hidden"></h2>
+      </section>
+
+    </main>
+    <footer>
+
+    </footer>
 
   </body>
 </html>
