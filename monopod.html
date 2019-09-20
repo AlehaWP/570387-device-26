@@ -3,10 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link  href="/fonts/Gilroyextrabold.ttf" rel="stylesheet">
+    <link  href="/fonts/Gilroylight.ttf" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
   </head>
   <body>
     <header class="main-header">
-      <a href="index.html"><img src="" class="main-header-logo" alt="Девайс"></a>
+      <a href="index.html"><img src="img/logo.svg" class="main-header-logo" alt="Девайс" width="163" height="35"></a>
       <div class="main-header-user-interface">
         <form class="main-header-search" action="https://echo.htmlacademy.ru" method="get">
           <input type="text" name="search" value="" placeholder="поиск по сайту" id="search-text">
@@ -77,12 +82,12 @@
           <h3>Сортировка:</h3>
           <ul class="sorting-options">
             <li><a href="#">По цене</a></li>
-            <li><a href="#"></a>По типу</li>
-            <li><a href="#"></a>По популярности</li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По популярности</a></li>
           </ul>
           <ul class="sorting-asc-desc">
             <li><a href="#" class="sorting-asc">По возрастанию</a></li>
-            <li><a href="#" class="sorting-desc"></a>По убыванию</li>
+            <li><a href="#" class="sorting-desc">По убыванию</a></li>
           </ul>
         </section>
         <section class="page-catalog-products">
@@ -91,28 +96,28 @@
             <li class="page-catalog-item">
               <p class="page-catalog-item-description">Любительская селфи-палка</p>
               <p class="page-catalog-item-price">500 руб.</p>
-              <img src="" alt="Фото селфи-палки">
+              <img src="img/monopod_amateur.jpg" alt="Фото селфи-палки" width="360" height="380">
               <a href="#" class="button page-catalog-item-to-basket">В корзину</a>
               <button type="button" class="page-catalog-item-to-compare">Добавить к сравнению</button>
             </li>
             <li class="page-catalog-item">
               <p class="page-catalog-item-description">Профессиональная селфи-палка</p>
               <p class="page-catalog-item-price">1 500 руб.</p>
-              <img src="" alt="Фото селфи-палки">
+              <img src="img/monopod_prof.jpg" alt="Фото селфи-палки" width="360" height="380">
               <a href="#" class="button page-catalog-item-to-basket">В корзину</a>
               <button type="button" class="page-catalog-item-to-compare">Добавить к сравнению</button>
             </li>
             <li class="page-catalog-item">
               <p class="page-catalog-item-description">Непотопляемая селфи-палка</p>
               <p class="page-catalog-item-price">2 500 руб.</p>
-              <img src="" alt="Фото селфи-палки">
+              <img src="img/monopod_not_sink.jpg" alt="Фото селфи-палки" width="360" height="380">
               <a href="#" class="button page-catalog-item-to-basket">В корзину</a>
               <button type="button" class="page-catalog-item-to-compare">Добавить к сравнению</button>
             </li>
-            <li class="page-catalog-item">
+            <li class="page-catalog-item new">
               <p class="page-catalog-item-description">Селфи-палка «Следуй за мной»</p>
               <p class="page-catalog-item-price">4 900 руб.</p>
-              <img src="" alt="Фото селфи-палки">
+              <img src="img/monopod_followme.jpg" alt="Фото селфи-палки" width="360" height="380">
               <a href="#" class="button page-catalog-item-to-basket">В корзину</a>
               <button type="button" class="page-catalog-item-to-compare">Добавить к сравнению</button>
             </li>
@@ -132,7 +137,7 @@
     </main>
     <footer>
       <div class="footer-left">
-        <a href="index.html"><img src="" class="footer-header-logo" alt="Девайс"></a>
+        <a href="index.html"><img src="img/logo.svg" class="footer-header-logo" alt="Девайс" width="163" height="135"></a>
         <address class="footer-address">
           г. Москва, ул. Строителей, 15
         </address>
@@ -172,7 +177,7 @@
           <a href="#" class="footer-header-basket">Корзина</a>
         </div>
         <a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-        <a href="https:\\htmlacademy.ru" class="creater-logo">ссылка htmlacademy</a>
+        <a href="https://htmlacademy.ru" class="creater-logo">ссылка htmlacademy</a>
       </div>
     </footer>
     <section class="send-question-form modal modal-dialog">
