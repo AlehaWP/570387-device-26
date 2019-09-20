@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>HTML Academy: Девайс главная страница</title>
     <link  href="fonts/Gilroyextrabold.ttf" rel="stylesheet">
     <link  href="fonts/Gilroylight.ttf" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
@@ -59,9 +59,9 @@
           <a href="#" class="button promotion-slider-button">Подробнее</a>
           <table>
             <tr>
-              <th>Длина палки</th>
-              <th>Вес палки</th>
-              <th>Материал</th>
+              <th scope="col">Длина палки</th>
+              <th scope="col">Вес палки</th>
+              <th scope="col">Материал</th>
             </tr>
             <tr>
               <td>8,5 метров</td>
@@ -81,7 +81,7 @@
           <a href="#" class="button promotion-slider-button">Подробнее</a>
           <table>
             <tr>
-              <th>Без подзарядки</th>
+              <th scope="col">Без подзарядки</th>
             </tr>
             <tr>
               <td>48 часов</td>
@@ -99,8 +99,8 @@
           <a href="#" class="button promotion-slider-button">Подробнее</a>
           <table>
             <tr>
-              <th>Дальность полета</th>
-              <th>Радиус поражения</th>
+              <th scope="col">Дальность полета</th>
+              <th scope="col">Радиус поражения</th>
             </tr>
             <tr>
               <td>800 м</td>
@@ -268,9 +268,10 @@
       <h2 class="visually-hidden">Задать вопрос</h2>
       <button type="button" name="close-button" class="modal-close">Закрыть окно</button>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <label>Ваше имя:<input type="text" name="user-name" placeholder="Имя Фамилия" required></label>
-        <label>Ваш e-mail:<input type="text" name="user-email" placeholder="email@examle.com" required></label>
-        <label>Текст письма:<input type="text" name="user-message" placeholder="Текст письма" required></label>
+        <p class="visually-hidden" id="danger-value">Неправильный формат</p>
+        <label>Ваше имя:<input type="text" name="user-name" placeholder="Имя Фамилия" required aria-describedby="danger-value"></label>
+        <label>Ваш e-mail:<input type="text" name="user-email" placeholder="email@examle.com" required aria-describedby="danger-value"></label>
+        <label>Текст письма:<input type="text" name="user-message" placeholder="Текст письма" required aria-describedby="danger-value"></label>
         <button type="submit" name="user-message-send" class="button" value="true">отправить</button>
       </form>
     </section>
