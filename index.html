@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс главная страница</title>
-    <link  href="fonts/Gilroyextrabold.ttf" rel="stylesheet">
-    <link  href="fonts/Gilroylight.ttf" rel="stylesheet">
+    <link  href="fonts/Gilroy-ExtraBold.otf" rel="stylesheet">
+    <link  href="fonts/Gilroy-Light.otf" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -23,7 +23,7 @@
       </div>
       <nav class="main-header-nav">
         <ul>
-          <li>
+          <li class="main-header-nav-first-level">
             <a href="#" class="main-header-nav-goods">Каталог товаров</a>
             <ul class="main-header-nav-goods-video">
               <li><a href="#">Виртуальная реальность</a></li>
@@ -38,9 +38,9 @@
               <li><a href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="main-header-nav-first-level"><a href="#">Доставка</a></li>
+          <li class="main-header-nav-first-level"><a href="#">Гарантия</a></li>
+          <li class="main-header-nav-first-level"><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -49,37 +49,35 @@
       <section class="promotion-slider">
         <h2 class="visually-hidden">Популярные товары</h2>
         <div class="promotion-slider-stick">
-          <h3 class="visually-hidden">Палка для селфи</h3>
           <img class="promotion-slider-image" src="img/stik.png" alt="Селфи палка" width="384" height="486">
-          <p class="promotion-slider-tagline">Делай селфи, как Бен Стиллер!</p>
+          <h3 class="promotion-slider-tagline">Делай селфи, как Бен Стиллер!</h3>
           <p class="promotion-slider-description">
             Самая длинная палка для селфи доступна в нашем магазине.
             Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
-          <a href="#" class="button promotion-slider-button">Подробнее</a>
-          <table>
+          <a href="#" class="yellow-button promotion-slider-button">Подробнее</a>
+          <table class="promotion-slider-table">
             <tr>
               <th scope="col">Длина палки</th>
               <th scope="col">Вес палки</th>
               <th scope="col">Материал</th>
             </tr>
             <tr>
-              <td>8,5 метров</td>
+              <td>8,5 м</td>
               <td>5 кг</td>
               <td>Карбон</td>
             </tr>
           </table>
         </div>
         <div class="promotion-slider-watch">
-          <h3 class="visually-hidden">фитнес-браслет</h3>
           <img class="promotion-slider-image" src="img/watch.png" alt="фитнес браслет" width="345" height="485">
-          <p class="promotion-slider-tagline">Худеем правильно!</p>
+          <h3 class="promotion-slider-tagline">Худеем правильно!</h3>
           <p class="promotion-slider-description">
             Мотивирующие фитнес-браслеты помогут найти в себе силы
             не пропускать занятия и соблюдать диету.
           </p>
-          <a href="#" class="button promotion-slider-button">Подробнее</a>
-          <table>
+          <a href="#" class="yellow-button promotion-slider-button">Подробнее</a>
+          <table class="promotion-slider-table">
             <tr>
               <th scope="col">Без подзарядки</th>
             </tr>
@@ -89,15 +87,14 @@
           </table>
         </div>
         <div class="promotion-slider-kuatrokopter">
-          <h3 class="visually-hidden">Квадрокоптер</h3>
           <img class="promotion-slider-image" src="img/kuatrokopter.png" alt="Квадрокоптер" width="526" height="334">
-          <p class="promotion-slider-tagline">Порхает как бабочка, жалит как пчела!</p>
+          <h3 class="promotion-slider-tagline">Порхает как бабочка, жалит как пчела!</h3>
           <p class="promotion-slider-description">
             Этот обычный, на первый взгляд, квадрокоптер оснащен
             мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <a href="#" class="button promotion-slider-button">Подробнее</a>
-          <table>
+          <a href="#" class="yellow-button promotion-slider-button">Подробнее</a>
+          <table class="promotion-slider-table">
             <tr>
               <th scope="col">Дальность полета</th>
               <th scope="col">Радиус поражения</th>
@@ -159,13 +156,13 @@
         <h2 class="visually-hidden">Наши преимущества</h2>
         <ul>
           <li>
-            <a href="#" class="button our-advantages-button">доставка</a>
+            <a href="#" class="yellow-button our-advantages-button">доставка</a>
           </li>
           <li>
-            <a href="#" class="button our-advantages-button">гарантия</a>
+            <a href="#" class="yellow-button our-advantages-button">гарантия</a>
           </li>
           <li>
-            <a href="#" class="button our-advantages-button">кредит</a>
+            <a href="#" class="yellow-button our-advantages-button">кредит</a>
           </li>
         </ul>
         <section class="our-advantages-delivery">
@@ -207,7 +204,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a href="#" class="button">подробнее о нас</a>
+          <a href="#" class="yellow-button">подробнее о нас</a>
         </section>
         <section class="contacts">
           <h2>Контакты</h2>
@@ -215,7 +212,7 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
           <img src="img/main_map.PNG" alt="Карта" width="560" height="222">
-          <a href="#" class="button">напишите нам</a>
+          <a href="#" class="yellow-button">напишите нам</a>
         </section>
       </div>
     </main>

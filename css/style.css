@@ -25,3 +25,189 @@ html { box-sizing: border-box }
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+body{
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 2;
+  /* letter-spacing: 0.15px; */
+  color: #464646;
+}
+
+.yellow-button
+{
+  text-decoration: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 23.5px;
+  /* letter-spacing: 3.7px; */
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+header a{
+  text-decoration: none;
+  font: inherit;
+  color: #000000;
+}
+
+.main-header-nav ul{
+  list-style: none;
+}
+
+.main-header-nav-first-level>a{
+  text-decoration: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.33;
+  /* letter-spacing: 3.6px; */
+  color: #000000;
+}
+
+.promotion-slider-tagline{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 47.5px;
+  line-height: 1.18;
+  /* letter-spacing: 0.48px; */
+  color: #000000;
+}
+
+.promotion-slider-table th{
+  font-family: inherit;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 1.54;
+  /* letter-spacing: 0.13px; */
+  color: #464646;
+}
+
+.promotion-slider-table td{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.33;
+  /* letter-spacing: 0.36px; */
+  color: #000000;
+}
+
+.main-production ul{
+  list-style: none;
+}
+
+.main-production a{
+  text-decoration: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.33;
+  /* letter-spacing: 0.18px; */
+  color: #000000;
+}
+
+.our-advantages ul{
+  list-style: none;
+}
+
+.our-advantages h3{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 47.5px;
+  line-height: 1;
+  /* letter-spacing: 0.48px; */
+  color: #000000;
+}
+
+.additional-information h2{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 47.5px;
+  line-height: 1;
+  /* letter-spacing: 0.48px; */
+  color: #000000;
+}
+
+.about-us ul{
+  list-style: none;
+}
+
+.about-us li{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 2.5;
+  /* letter-spacing: 0.48px; */
+  color: #000000;
+}
+
+footer{
+  color: #ffffff;
+  background-color: #464646;
+}
+
+footer a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-nav a{
+  text-decoration: inherit;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 1.33;
+  /* letter-spacing: 3.6px; */
+  color: inherit;
+}
+
+.send-question-form label{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 17.5px;
+  line-height: 1.4;
+  /* letter-spacing: normal; */
+  color: #000000;
+}
+
+.send-question-form input::-webkit-input-placeholder{
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.25;
+  color: black;
+  /* color: rgba(70, 70, 70, 0.4); */
+}
+.send-question-form input:-moz-placeholder{
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.25;
+  color: black;
+  /* color: rgba(70, 70, 70, 0.4); */
+}
+.send-question-form input::placeholder{
+   font-family: "Open Sans", Arial, sans-serif;
+   font-weight: 300;
+   font-style: normal;
+   font-size: 14px;
+   line-height: 1.25;
+   color: black;
+   /* color: rgba(70, 70, 70, 0.4); */
+}
