@@ -3,22 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс главная страница</title>
-    <link  href="fonts/Gilroy-ExtraBold.otf" rel="stylesheet">
-    <link  href="fonts/Gilroy-Light.otf" rel="stylesheet">
+    <link  href="Fonts/Gilroyextrabold.ttf" rel="stylesheet">
+    <link  href="Fonts/Gilroy-Light.otf" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
-      <img src="img/logo.svg" class="main-header-logo" alt="Девайс" width="163" height="35">
+      <a href="#" class="main-header-logo"><img src="img/logo.svg" alt="Девайс" width="163" height="35"></a>
       <div class="main-header-user-interface">
         <form class="main-header-search" action="https://echo.htmlacademy.ru" method="get">
           <input type="text" name="search" value="" placeholder="поиск по сайту" id="search-text">
-          <label for="search-text">строка поиска</label>
+          <button type="submit" name="search-button">Найти</button>
+          <label for="search-text visually-hidden">строка поиска</label>
         </form>
         <a href="#" class="main-header-sign-in">Войти</a>
-        <a href="#" class="main-header-compare">Вравнить</a>
+        <a href="#" class="main-header-compare">Сравнить</a>
         <a href="#" class="main-header-basket">Корзина</a>
       </div>
       <nav class="main-header-nav">
@@ -46,9 +47,9 @@
     </header>
     <main>
       <h1 class="visually-hidden">Интернет-магазин интересных девайсов</h1>
-      <section class="promotion-slider">
+      <article class="promotion-slider">
         <h2 class="visually-hidden">Популярные товары</h2>
-        <div class="promotion-slider-stick">
+        <article class="promotion-slider-stick">
           <img class="promotion-slider-image" src="img/stik.png" alt="Селфи палка" width="384" height="486">
           <h3 class="promotion-slider-tagline">Делай селфи, как Бен Стиллер!</h3>
           <p class="promotion-slider-description">
@@ -68,8 +69,8 @@
               <td>Карбон</td>
             </tr>
           </table>
-        </div>
-        <div class="promotion-slider-watch">
+        </article>
+        <article class="promotion-slider-watch">
           <img class="promotion-slider-image" src="img/watch.png" alt="фитнес браслет" width="345" height="485">
           <h3 class="promotion-slider-tagline">Худеем правильно!</h3>
           <p class="promotion-slider-description">
@@ -85,8 +86,8 @@
               <td>48 часов</td>
             </tr>
           </table>
-        </div>
-        <div class="promotion-slider-kuatrokopter">
+        </article>
+        <article class="promotion-slider-kuatrokopter">
           <img class="promotion-slider-image" src="img/kuatrokopter.png" alt="Квадрокоптер" width="526" height="334">
           <h3 class="promotion-slider-tagline">Порхает как бабочка, жалит как пчела!</h3>
           <p class="promotion-slider-description">
@@ -104,50 +105,50 @@
               <td>50 м</td>
             </tr>
           </table>
-        </div>
+        </article>
         <div class="promotion-slider-radio">
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
+          <button type="button" class="slider actived" value="1">Переключить картинку</button>
+          <button type="button" class="slider" value="2">Переключить картинку</button>
+          <button type="button" class="slider" value="3">Переключить картинку</button>
         </div>
-      </section>
+      </article>
       <section class="main-production">
         <h2 class="visually-hidden">Наша продукция</h2>
         <ul>
           <li>
             <a href="#">
+              <div class="main-production-card"></div>
               Виртуальная реальность
-              <div class="main-production-card"></div>
             </a>
           </li>
           <li>
             <a href="#">
+              <div class="main-production-card"></div>
               Моноподы для селфи
-              <div class="main-production-card"></div>
             </a>
           </li>
           <li>
             <a href="#">
+              <div class="main-production-card"></div>
               Экшн-камеры
-              <div class="main-production-card"></div>
             </a>
           </li>
           <li>
             <a href="#">
+              <div class="main-production-card"></div>
               Фитнес-браслеты
-              <div class="main-production-card"></div>
             </a>
           </li>
           <li>
             <a href="#">
-              Умные часы
               <div class="main-production-card"></div>
+              Умные часы
             </a>
           </li>
           <li>
             <a href="#">
-              Умные часы
               <div class="main-production-card"></div>
+              Квадрокоптеры
             </a>
           </li>
         </ul>
@@ -185,6 +186,7 @@
         </section>
       </section>
       <section class="our-partners">
+        <h2 class="visually-hidden">Наши партнеры</h2>
         <img src="img/dji.png" alt="dji" width="260" height="100">
         <img src="img/spgadgets.png" alt="spGadjets" width="260" height="100">
         <img src="img/gopro.png" alt="GoPro" width="260" height="100">
@@ -226,19 +228,17 @@
         </div>
       </div>
       <div class="footer-center">
-        <nav class="footer-nav">
-          <ul>
-            <li>
-              <a href="#">доставка</a>
-            </li>
-            <li>
-              <a href="#">гарантия</a>
-            </li>
-            <li>
-              <a href="#">контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <ul class="footer-nav">
+          <li>
+            <a href="#">доставка</a>
+          </li>
+          <li>
+            <a href="#">гарантия</a>
+          </li>
+          <li>
+            <a href="#">контакты</a>
+          </li>
+        </ul>
         <ul class="social-buttons">
           <li>
             <a href="#">facebook</a>

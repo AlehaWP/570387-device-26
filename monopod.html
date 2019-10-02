@@ -11,19 +11,19 @@
   </head>
   <body>
     <header class="main-header">
-      <a href="index.html"><img src="img/logo.svg" class="main-header-logo" alt="Девайс" width="163" height="35"></a>
+      <img src="img/logo.svg" class="main-header-logo" alt="Девайс" width="163" height="35">
       <div class="main-header-user-interface">
         <form class="main-header-search" action="https://echo.htmlacademy.ru" method="get">
           <input type="text" name="search" value="" placeholder="поиск по сайту" id="search-text">
           <label for="search-text">строка поиска</label>
         </form>
         <a href="#" class="main-header-sign-in">Войти</a>
-        <a href="#" class="main-header-compare">Cравнить</a>
+        <a href="#" class="main-header-compare">Сравнить</a>
         <a href="#" class="main-header-basket">Корзина</a>
       </div>
       <nav class="main-header-nav">
         <ul>
-          <li>
+          <li class="main-header-nav-first-level">
             <a href="#" class="main-header-nav-goods">Каталог товаров</a>
             <ul class="main-header-nav-goods-video">
               <li><a href="#">Виртуальная реальность</a></li>
@@ -38,9 +38,9 @@
               <li><a href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="main-header-nav-first-level"><a href="#">Доставка</a></li>
+          <li class="main-header-nav-first-level"><a href="#">Гарантия</a></li>
+          <li class="main-header-nav-first-level"><a href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -145,19 +145,17 @@
         </div>
       </div>
       <div class="footer-center">
-        <nav class="footer-nav">
-          <ul>
-            <li>
-              <a href="#">доставка</a>
-            </li>
-            <li>
-              <a href="#">гарантия</a>
-            </li>
-            <li>
-              <a href="#">контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <ul class="footer-nav">
+          <li>
+            <a href="#">доставка</a>
+          </li>
+          <li>
+            <a href="#">гарантия</a>
+          </li>
+          <li>
+            <a href="#">контакты</a>
+          </li>
+        </ul>
         <ul class="social-buttons">
           <li>
             <a href="#">facebook</a>
