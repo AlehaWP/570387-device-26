@@ -80,6 +80,15 @@ header a{
   background-color: transparent;
 }
 
+header a:hover,
+header a:focus{
+  opacity: 0.6;
+}
+
+header a:active{
+  opacity: 0.3;
+}
+
 .main-header-logo{
   font: inherit;
   background-color: transparent;
@@ -87,19 +96,21 @@ header a{
   margin:  0;
 }
 
-.main-header-logo:hover,
-.main-header-logo:focus
-{
-  opacity: 0.6;
-}
-
-.main-header-logo:active{
-  opacity: 0.3;
-}
-
 .main-header-search input{
+  outline: none;
   background-color: transparent;
   border: none;
+}
+
+.main-header-search input:focus{
+  border-bottom: 2px solid black;
+}
+
+.main-header-search button{
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid black;
+  box-shadow: none;
 }
 
 .main-header-search input::-webkit-input-placeholder{
