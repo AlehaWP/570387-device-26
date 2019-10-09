@@ -96,6 +96,23 @@ header a:active{
   margin:  0;
 }
 
+.main-header-search button{
+  visibility: hidden;
+}
+
+.main-header-search button:hover,
+.main-header-search button:focus{
+  visibility: visible;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.main-header-search button:active{
+  visibility: visible;
+  background-color: #000000;
+  color: rgba(255,255,255, 0.3);
+}
+
 .main-header-search input{
   outline: none;
   background-color: transparent;
@@ -104,6 +121,11 @@ header a:active{
 
 .main-header-search input:focus{
   border-bottom: 2px solid black;
+}
+
+.main-header-search input:focus ~ button{
+  visibility: visible;
+  display: inline-block;
 }
 
 .main-header-search button{
@@ -260,10 +282,45 @@ header a:active{
   color: #000000;
 }
 
+.main-production a:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .main-production-card{
     width: 160px;
     height: 160px;
     background-color: rgba(240,197,46,0.5);
+    background-repeat: no-repeat;
+}
+
+.main-production-card:hover,
+.main-production-card:focus,
+.main-production-card:active{
+    background-color: #f0c52e;
+}
+
+.virtual{
+  background-image: url("../img/virtual.svg");
+}
+
+.monopod{
+  background-image: url("../img/monopod.svg");
+}
+
+.camera{
+  background-image: url("../img/camera.svg");
+}
+
+.fit{
+  background-image: url("../img/fit.svg");
+}
+
+.watch{
+  background-image: url("../img/watch.svg");
+}
+
+.quatrocopter{
+  background-image: url("../img/quatrocopter.svg");
 }
 
 .our-advantages{
@@ -309,6 +366,14 @@ header a:active{
   color: #000000;
 }
 
+.our-partners img{
+  opacity: 0.3;
+}
+
+.our-partners img:hover {
+  opacity: 1;
+}
+
 footer{
   color: #ffffff;
   background-color: #464646;
@@ -318,6 +383,15 @@ footer a{
   text-decoration: none;
   color: inherit;
   background-color: transparent;;
+}
+
+footer a:hover,
+footer a:focus{
+  opacity: 0.6;
+}
+
+footer a:active{
+  opacity: 0.3;
 }
 
 footer address{
@@ -342,6 +416,32 @@ footer address{
 
 .social-buttons{
   list-style: none;
+}
+
+.social-buttons a{
+  opacity: 0.3;
+}
+
+.social-buttons a:hover,
+.social-buttons a:focus{
+  opacity: 1;
+}
+
+.social-buttons a:active{
+  opacity: 0.6;
+}
+
+.footer-user-interface a{
+  opacity: 0.3;
+}
+
+.footer-user-interface a:hover,
+.footer-user-interface a:focus{
+  opacity: 1;
+}
+
+.footer-user-interface a:active{
+  opacity: 0.6;
 }
 
 .send-question-form label{
