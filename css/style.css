@@ -78,13 +78,14 @@ body{
 header{
     padding: 0;
     margin: 0;
-    padding: 0 61px 42px 60px;
+    padding: 0 61px 166px 60px;
     margin-bottom: -80px;
     /* border: 1px solid transparent; */
     font: inherit;
     color: #000000;
     /* background-color: rgba(240,197,46,0.5); */
-    background-color: rgb(255, 226, 151)
+    /* background-color: rgb(255, 226, 151); */
+    background-color: #f7e296;
 }
 
 header a{
@@ -228,18 +229,10 @@ header a:active{
   opacity: 1  ;
 }
 
-.goods-list{
-  position: relative;
-
-}
-
-.test{
-  position: absolute;
-  width: 500px;
-  height: 200px;
-  background-color: rgb(255, 226, 151);
-  /* opacity: 0.5; */
-  top: 50px;
+.main-header-nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .main-header-nav ul{
@@ -249,7 +242,8 @@ header a:active{
   display: flex;
 }
 
-.main-header-nav-first-level>a{
+.main-header-nav-first-level>a,
+.main-header-nav-first-level label{
   text-decoration: none;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
@@ -259,7 +253,26 @@ header a:active{
   /* letter-spacing: 3.6px; */
   color: #000000;
 
-  background-color: transparent;;
+  background-color: transparent;
+}
+
+.goods-list{
+  position: relative;
+}
+
+.goods-open-list{
+  display: none;
+}
+
+.goods-list-show:checked ~ .goods-open-list{
+  display: block;
+}
+
+.goods-open-list{
+  position: absolute;
+  top: 50px;
+  background-color: #f7e296;
+  /* opacity: 0.5; */
 }
 
 .promotion-slider article{
