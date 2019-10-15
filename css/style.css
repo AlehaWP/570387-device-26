@@ -78,8 +78,9 @@ body{
 header{
     padding: 0;
     margin: 0;
-    padding: 0 61px 166px 60px;
-    margin-bottom: -80px;
+    padding: 0 61px 53px 60px;
+    /* margin-bottom: -80px; */
+
     /* border: 1px solid transparent; */
     font: inherit;
     color: #000000;
@@ -242,8 +243,7 @@ header a:active{
   display: flex;
 }
 
-.main-header-nav-first-level>a,
-.main-header-nav-first-level label{
+.main-header-nav-first-level{
   text-decoration: none;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
@@ -256,10 +256,6 @@ header a:active{
   background-color: transparent;
 }
 
-.goods-list{
-  position: relative;
-}
-
 .goods-open-list{
   display: none;
 }
@@ -268,11 +264,17 @@ header a:active{
   display: block;
 }
 
+
 .goods-open-list{
-  position: absolute;
-  top: 50px;
+  position: relative;
   background-color: #f7e296;
   /* opacity: 0.5; */
+}
+
+.promotion-slider{
+  /* margin-top: -108px; */
+  margin-top: -70px;
+  padding:0 90px;
 }
 
 .promotion-slider article{
