@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
-      <a href="index.html" class="main-header-logo"><img src="img/logo.svg" alt="Девайс" width="163" height="35"></a>
+    <header class="main-header center-container">
+      <a href="#" class="main-header-logo"><img src="img/logo.svg" alt="Девайс" width="163" height="35"></a>
       <div class="main-header-user-interface">
         <form class="main-header-search" action="https://echo.htmlacademy.ru" method="get">
           <input type="text" name="search" value="" placeholder="поиск по сайту" id="search-text">
@@ -19,16 +19,24 @@
           <label for="search-text" class="visually-hidden">строка поиска</label>
         </form>
         <a href="#" class="main-header-sign-in">Войти</a>
-        <a href="#" class="main-header-compare">Сравнить</a>
-        <a href="#" class="main-header-basket">Корзина</a>
+        <ul>
+          <li><a href="#" class="main-header-compare">Сравнить</a></li>
+          <li><a href="#" class="main-header-basket">Корзина</a></li>
+        </ul>
       </div>
       <nav class="main-header-nav">
+        <label for="list-show" class="main-header-nav-first-level">Каталог товаров</label>
+        <input type="checkbox" id="list-show" class="goods-list-show">
         <ul>
-          <li class="main-header-nav-first-level">
-            <a href="#" class="main-header-nav-goods">Каталог товаров</a>
+          <li class="main-header-nav-first-level"><a href="#">Доставка</a></li>
+          <li class="main-header-nav-first-level"><a href="#">Гарантия</a></li>
+          <li class="main-header-nav-first-level"><a href="#">Контакты</a></li>
+        </ul>
+        <div class="list-open list-open-not-header">
+          <div class="list-goods">
             <ul class="main-header-nav-goods-video">
               <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="monopod.html">Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
             </ul>
             <ul class="main-header-nav-goods-watch">
@@ -38,11 +46,8 @@
             <ul class="main-header-nav-goods-fly-device">
               <li><a href="#">Квадрокоптеры</a></li>
             </ul>
-          </li>
-          <li class="main-header-nav-first-level"><a href="#">Доставка</a></li>
-          <li class="main-header-nav-first-level"><a href="#">Гарантия</a></li>
-          <li class="main-header-nav-first-level"><a href="#">Контакты</a></li>
-        </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
