@@ -260,10 +260,7 @@ header a:active{
 }
 
 .main-header-nav ul{
-  margin: 0;
-  padding: 0;
   list-style: none;
-  display: flex;
 }
 
 .main-header-nav-first-level{
@@ -289,6 +286,37 @@ header a:active{
   display: none;
 }
 
+.goods-list-show-label{
+  margin-right: 16px
+}
+
+.goods-list-show{
+  position: relative;
+  margin-right: auto;
+  margin-top: 4px;
+  width: 0.1px;
+  height: 0.1px;
+  background-color: transparent;
+}
+
+.goods-list-show::after{
+  content: "";
+  position: absolute;
+  left: 7px;
+  width: 2px;
+  height: 16px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.goods-list-show::before{
+  content: "";
+  position: absolute;
+  top: 7px;
+  width: 16px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .goods-list-show:checked ~ .list-open{
   position: relative;
   display: block;
@@ -300,11 +328,27 @@ header a:active{
 
 .goods-list-show:checked ~ .list-open .list-goods{
   position: absolute;
-  display: block;
+  display: flex;
   width: 100%;
   min-height: 123px;
   background-color: #f7e296;
   /* opacity: 0.5; */
+}
+
+.list-goods ul{
+  margin: 0;
+  padding: 0;
+  margin-right: 58px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.main-header-nav-our-debt{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-right: 114px;
 }
 
 .promotion-slider{
