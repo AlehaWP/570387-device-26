@@ -12,9 +12,20 @@
   font-style: normal;
 }
 
+/*
+{
+  Позиционирование
+  Блочная модель
+  Типографика
+  Оформление
+  Анимация
+  Разное
+}
+*/
 
 body {
   margin: 0;
+  padding-top: 40px;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -23,10 +34,12 @@ body {
   /* letter-spacing: 0.15px; */
   color: #464646;
 }
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 a { text-decoration: none }
 
 html { box-sizing: border-box }
@@ -56,65 +69,97 @@ html { box-sizing: border-box }
   margin-right: auto;
 }
 
+.yellow-button{
+  position: relative;
+  padding: 8px 44px 8px 44px;
+  text-decoration: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18.5px;
+  line-height: 23.5px;
+  letter-spacing: 3.7px;
+  text-transform: uppercase;
+  color: transparent;
+  background: transparent;
+}
+
 .yellow-button::before{
     content: "";
     position: absolute;
     left: 0;
-    top: 42%;
+    top: 40%;
+    /* transform: translateY(-50%); */
     width: 100%;
     height: 20%;
-    z-index: -1;
+    color: black;
     background-color: #f0c52e;
     transition: all 0.7s;
 }
 
-.yellow-button
-{
-  position: relative;
-  padding: 14px 43px 11px 44px;
-  text-decoration: none;
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 800;
-  font-size: 15px;
-  line-height: 23.5px;
-  letter-spacing: 3.7px;
-  text-align: center;
-  text-transform: uppercase;
+.yellow-button::after{
+  content: attr(data-caption);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: inherit;
   color: #000000;
+  background-color: transparent;
 }
 
 .yellow-button:hover::before,
 .yellow-button:focus::before,
 .yellow-button:active::before{
+  /* transform: translateY(0); */
   top: 0;
   height: 100%;
 }
 
 .yellow-button:active{
-  color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
 }
 
-body{
-  padding-top: 40px;
+/*Можно было все сделать при помощи liner-gradient, но не получался плавный переход*/
+/*
+
+.yellow-button{
+  position: relative;
+  padding: 14px 43px 11px 44px;
+  text-decoration: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18.5px;
+  line-height: 23.5px;
+  letter-spacing: 3.7px;
+  text-transform: uppercase;
+  color: #000000;
+  background: linear-gradient(to bottom, transparent 0%, transparent 45%, #f0c52e 45%, #f0c52e 60%, transparent 60%, transparent 100%);
 }
+
+.yellow-button:hover,
+.yellow-button:focus,
+.yellow-button:active{
+  background-color: #f0c52e;
+}
+
+.yellow-button:active{
+  color: rgba(0, 0, 0, 0.3);
+} */
 
 header{
     padding: 0;
     margin: 0;
     padding: 0 61px 13px 60px;
-    /* margin-bottom: -80px; */
-
-    /* border: 1px solid transparent; */
     font: inherit;
     color: #000000;
-    /* background-color: rgba(240,197,46,0.5); */
-    /* background-color: rgb(255, 226, 151); */
     background-color: #f7e296;
 }
 
 header a{
-  /* text-decoration: none; */
-  /* display: block; */
   font: inherit;
   color: #000000;
 
@@ -130,148 +175,212 @@ header a:active{
   opacity: 0.3;
 }
 
-.main-header-logo{
-  margin: 0;
-  padding:  0;
-  display: inline-block;
-  vertical-align: top;
+.header-logo{
+  display: block;
   font: inherit;
   font-size: 0;
+  width: 163px;
   background-color: transparent;
+  margin-bottom: 5px;
+}
+
+.header-logo img{
+  padding: 0;
+  margin: 0;
   margin-top: -20px;
 }
 
-.main-header-user-interface{
+.header-user-interface{
+  display: flex;
+  align-items: flex-end;
   margin: 0;
   padding:  0;
-  display: flex;
-  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
-.main-header-user-interface ul{
-  margin: 0;
-  padding:  0;
+.header-user-interface > *{
+  margin-bottom: 20px;
+}
+
+.header-user-interface ul{
+  display: flex;
   list-style: none;
+}
+
+.header-user-interface a{
+  padding-left: 27px;
+}
+
+.header-search{
+  /* position: relative; */
   display: flex;
-  justify-content: space-between;
+  align-items: flex-end;
+  width: 441px;
+  margin: 0 100px 0px 0px;
 }
 
-.main-header-search button{
-  visibility: hidden;
+.header-search label{
+  position: relative;
+  left: 2px;
+  bottom: 10px;
+  width: 13px;
+  height: 13px;
+  margin-right: -13px;
+  border: 2px solid black;
+  border-radius: 50%;
+  color: transparent;
+  white-space: nowrap;
+  /* overflow: hidden; */
 }
 
-.main-header-search button:hover,
-.main-header-search button:focus{
-  visibility: visible;
-  background-color: #000000;
-  color: #ffffff;main-production-img
+.header-search label::after{
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  right: -2px;
+  width:2px;
+  height: 8px;
+  transform: rotate(-45deg);
+  background-color: black;
 }
 
-.main-header-search button:active{
-  visibility: visible;
-  background-color: #000000;
-  color: rgba(255,255,255, 0.3);
-}
-
-.main-header-search input{
+.header-search input{
+  padding-bottom: 8px;
+  padding-left: 36px;
+  flex-grow: 1;
   outline: none;
   background-color: transparent;
   border: none;
 }
 
-.main-header-search input:focus{
+.header-search input:focus{
   border-bottom: 2px solid black;
 }
 
-.main-header-search input:focus ~ button{
-  visibility: visible;
-  display: inline-block;
-}
 
-.main-header-search button{
-  font: inherit;
-  background-color: transparent;
-  border: 2px solid black;
-  box-shadow: none;
-}
-
-.main-header-search input::-webkit-input-placeholder{
+.header-search input::-webkit-input-placeholder{
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 15px;
   line-height: 1.25;
   letter-spacing: 0.15px;
-  color: black;
-  opacity: 0.3;
+  color: rgba(0,0,0,0.3);
   /* color: rgba(70, 70, 70, 0.4); */
 }
-.main-header-search input:-moz-placeholder{
+
+.header-search input:-moz-placeholder{
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 15px;
   line-height: 1.25;
   letter-spacing: 0.15px;
-  color: black;
-  opacity: 0.3;
+  color: rgba(0,0,0,0.3);
   /* color: rgba(70, 70, 70, 0.4); */
 }
-.main-header-search input::placeholder{
+
+.header-search input::placeholder{
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 15px;
   line-height: 1.25;
   letter-spacing: 0.15px;
-  color: black;
-  opacity: 0.3;
+  color: rgba(0,0,0,0.3);
    /* color: rgba(70, 70, 70, 0.4); */
 }
 
-.main-header-search input:hover::-webkit-input-placeholder{
-  opacity: 0.6;
+.header-search input:hover::-webkit-input-placeholder{
+  color: rgba(0,0,0,0.6);
 }
 
-.main-header-search input:hover:-moz-placeholder{
-  opacity: 0.6;
+.header-search input:hover:-moz-placeholder{
+  color: rgba(0,0,0,0.6);
 }
 
-.main-header-search input:hover::placeholder{
-  opacity: 0.6;
+.header-search input:hover::placeholder{
+  color: rgba(0,0,0,0.6);
 }
 
-.main-header-search input:focus::-webkit-input-placeholder{
+.header-search input:focus::-webkit-input-placeholder{
+  color: rgba(0,0,0,0);
+}
+
+.header-search input:focus:-moz-placeholder{
+  color: rgba(0,0,0,0);
+}
+
+.header-search input:focus::placeholder{
+  color: rgba(0,0,0,0);
+}
+
+.header-search input:focus ~ button{
   opacity: 1;
 }
 
-.main-header-search input:focus:-moz-placeholder{
+.header-search button{
+  margin: 0;
+  /* visibility: hidden; */
+  padding: 9px 20px;
+  font: inherit;
+  color: #000000;
+  background-color: transparent;
+  opacity: 0;
+  border: 2px solid black;
+}
+
+.header-search button:hover,
+.header-search button:focus{
   opacity: 1;
+  color: #ffffff;
+  background-color: #000000;
 }
 
-.main-header-search input:focus::placeholder{
-  opacity: 1  ;
+.header-search button:active{
+  opacity: 1;
+  color: rgba(255,255,255, 0.3);
+  background-color: #000000;
 }
 
-.main-header-nav{
+.header-user-interface-center{
+  margin: 0;
+  padding:  0;
+  margin-right: auto;
+}
+
+.header-user-interface-right{
+  margin: 0;
+  padding:  0;
+}
+
+.header-user-interface-right li{
+  margin-left: 41px;
+}
+
+.header-nav{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.main-header-nav ul{
+.header-nav ul{
   list-style: none;
 }
 
-.main-header-nav-first-level{
-  margin-bottom: 40px;
+.header-nav>*{
+  margin-bottom: 20px;
+}
+
+.header-nav-first-level{
   text-decoration: none;
+  text-transform: uppercase;
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-style: normal;
   font-size: 18px;
   line-height: 1.33;
-  /* letter-spacing: 3.6px; */
+  letter-spacing: 3.6px;
   color: #000000;
 
   background-color: transparent;
@@ -324,14 +433,15 @@ header a:active{
 
 .list-goods{
   display: none;
+  position: absolute;
+  width: 100%;
+  padding-bottom: 42px;
+  background-color: #f7e296;
 }
 
 .goods-list-show:checked ~ .list-open .list-goods{
-  position: absolute;
   display: flex;
-  width: 100%;
-  min-height: 123px;
-  background-color: #f7e296;
+
   /* opacity: 0.5; */
 }
 
@@ -344,11 +454,18 @@ header a:active{
   flex-wrap: nowrap;
 }
 
-.main-header-nav-our-debt{
+.header-nav-our-debt{
   margin: 0;
   padding: 0;
   display: flex;
   margin-right: 114px;
+}
+
+.header-nav-link-us{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: wrap row;
 }
 
 .promotion-slider{

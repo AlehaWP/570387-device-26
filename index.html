@@ -10,43 +10,45 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header center-container">
-      <a href="#" class="main-header-logo"><img src="img/logo.svg" alt="Девайс" width="163" height="35"></a>
-      <div class="main-header-user-interface">
-        <form class="main-header-search" action="https://echo.htmlacademy.ru" method="get">
-          <input type="text" name="search" value="" placeholder="поиск по сайту" id="search-text">
+    <header class="header center-container">
+      <a href="#" class="header-logo"><img src="img/logo.svg" alt="Девайс" width="163" height="35"></a>
+      <div class="header-user-interface">
+        <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+          <label for="search-text" class="">строка поиска</label>
+          <input type="text" name="search" value="" placeholder="Поиск по сайту" id="search-text">
           <button type="submit" name="search-button" value="true">Найти</button>
-          <label for="search-text" class="visually-hidden">строка поиска</label>
         </form>
-        <a href="#" class="main-header-sign-in">Войти</a>
-        <ul>
-          <li><a href="#" class="main-header-compare">Сравнить</a></li>
-          <li><a href="#" class="main-header-basket">Корзина</a></li>
+        <ul class="header-user-interface-center">
+          <a href="#" class="header-sign-in">Войти</a>
+        </ul>
+        <ul class="header-user-interface-right">
+          <li><a href="#" class="header-compare">Сравнить</a></li>
+          <li><a href="#" class="header-basket">Корзина</a></li>
         </ul>
       </div>
-      <nav class="main-header-nav">
-        <label for="list-show" class="main-header-nav-first-level goods-list-show-label">Каталог товаров</label>
+      <nav class="header-nav">
+        <label for="list-show" class="header-nav-first-level goods-list-show-label">Каталог товаров</label>
         <input type="checkbox" id="list-show" class="goods-list-show">
-        <ul class="main-header-nav-our-debt">
-          <li class="main-header-nav-first-level"><a href="#">Доставка</a></li>
-          <li class="main-header-nav-first-level"><a href="#">Гарантия</a></li>
+        <ul class="header-nav-our-debt">
+          <li class="header-nav-first-level"><a href="#">Доставка</a></li>
+          <li class="header-nav-first-level"><a href="#">Гарантия</a></li>
         </ul>
-        <ul>
-          <li class="main-header-nav-first-level"><a href="#">Контакты</a></li>
+        <ul class="header-nav-link-us">
+          <li class="header-nav-first-level"><a href="#">Контакты</a></li>
         </ul>
 
         <div class="list-open">
           <div class="list-goods">
-            <ul class="main-header-nav-goods-video">
+            <ul class="header-nav-goods-video">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="monopod.html">Моноподы для селфи</a></li>
               <li><a href="#">Экшн-камеры</a></li>
             </ul>
-            <ul class="main-header-nav-goods-watch">
+            <ul class="header-nav-goods-watch">
               <li><a href="#">Фитнес-браслеты</a></li>
               <li><a href="#">Умные часы</a></li>
             </ul>
-            <ul class="main-header-nav-goods-fly-device">
+            <ul class="header-nav-goods-fly-device">
               <li><a href="#">Квадрокоптеры</a></li>
             </ul>
           </div>
@@ -65,7 +67,7 @@
               Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
             </p>
-            <a href="monopod.html" class="yellow-button promotion-slider-button">Подробнее</a>
+            <a href="monopod.html" class="yellow-button promotion-slider-button" data-caption="Подробнее">Подробнее</a>
             <table class="promotion-slider-table">
               <tr>
                 <th scope="col">Длина палки</th>
@@ -88,7 +90,7 @@
               Мотивирующие фитнес-браслеты помогут найти в себе силы
               не пропускать занятия и соблюдать диету.
             </p>
-            <a href="#" class="yellow-button promotion-slider-button">Подробнее</a>
+            <a href="#" class="yellow-button promotion-slider-button" data-caption="Подробнее">Подробнее</a>
             <table class="promotion-slider-table">
               <tr>
                 <th scope="col">Без подзарядки</th>
@@ -106,7 +108,7 @@
             Этот обычный, на первый взгляд, квадрокоптер оснащен
             мощным лазером, замаскированным под стандартную камеру.
           </p>
-          <a href="#" class="yellow-button promotion-slider-button">Подробнее</a>
+          <a href="#" class="yellow-button promotion-slider-button"  data-caption="Подробнее">Подробнее</a>
           <table class="promotion-slider-table">
             <tr>
               <th scope="col">Дальность полета</th>
@@ -170,13 +172,13 @@
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul>
             <li>
-              <a href="#" class="yellow-button our-advantages-button">доставка</a>
+              <a href="#" class="yellow-button our-advantages-button"  data-caption="доставка">доставка</a>
             </li>
             <li>
-              <a href="#" class="yellow-button our-advantages-button">гарантия</a>
+              <a href="#" class="yellow-button our-advantages-button" data-caption="гарантия">гарантия</a>
             </li>
             <li>
-              <a href="#" class="yellow-button our-advantages-button">кредит</a>
+              <a href="#" class="yellow-button our-advantages-button" data-caption="кредит">кредит</a>
             </li>
           </ul>
           <section class="our-advantages-delivery">
@@ -220,7 +222,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a href="#" class="yellow-button">подробнее о нас</a>
+          <a href="#" class="yellow-button" data-caption="подробнее о нас">подробнее о нас</a>
         </section>
         <section class="contacts">
           <h2>Контакты</h2>
@@ -228,7 +230,7 @@
             Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
           </p>
           <img src="img/main_map.PNG" alt="Карта" width="560" height="222">
-          <a href="#" class="yellow-button">напишите нам</a>
+          <a href="#" class="yellow-button" data-caption="напишите нам">напишите нам</a>
         </section>
       </div>
     </main>
