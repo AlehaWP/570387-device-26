@@ -68,7 +68,7 @@ html { box-sizing: border-box }
   margin-left: auto;
   margin-right: auto;
 }
-
+/* Дрочка с псевдоклассами. Не сразу пришел к расширению градиента. А удалять жалко.
 .yellow-button{
   position: relative;
   padding: 8px 44px 8px 44px;
@@ -88,7 +88,6 @@ html { box-sizing: border-box }
     position: absolute;
     left: 0;
     top: 40%;
-    /* transform: translateY(-50%); */
     width: 100%;
     height: 20%;
     color: black;
@@ -114,7 +113,6 @@ html { box-sizing: border-box }
 .yellow-button:hover::before,
 .yellow-button:focus::before,
 .yellow-button:active::before{
-  /* transform: translateY(0); */
   top: 0;
   height: 100%;
 }
@@ -122,9 +120,7 @@ html { box-sizing: border-box }
 .yellow-button:active{
   opacity: 0.3;
 }
-
-/*Можно было все сделать при помощи liner-gradient, но не получался плавный переход*/
-/*
+*/
 
 .yellow-button{
   position: relative;
@@ -137,18 +133,20 @@ html { box-sizing: border-box }
   letter-spacing: 3.7px;
   text-transform: uppercase;
   color: #000000;
-  background: linear-gradient(to bottom, transparent 0%, transparent 45%, #f0c52e 45%, #f0c52e 60%, transparent 60%, transparent 100%);
+  transition: background-size 0.7s;
+  background: transparent linear-gradient(#f0c52e,#f0c52e) 0 55% no-repeat;
+  background-size: 100% 20%;
 }
 
 .yellow-button:hover,
 .yellow-button:focus,
 .yellow-button:active{
-  background-color: #f0c52e;
+  background-size: 100% 100%;
 }
 
 .yellow-button:active{
   color: rgba(0, 0, 0, 0.3);
-} */
+}
 
 header{
     padding: 0;
